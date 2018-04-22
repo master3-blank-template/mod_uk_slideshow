@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<extension type="module" version="3.3" method="upgrade" client="site">
+    <name>MOD_UK_SLIDESHOW</name>
+	<author>Aleksey A. Morozov (AlekVolsk)</author>
+	<copyright>(C) 2018 Aleksey A. Morozov. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
+	<version>1.0.0</version>
+	<creationDate>April 2018</creationDate>
+    <description>MOD_UK_SLIDESHOW_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_uk_slideshow">mod_uk_slideshow.php</filename>
+        <folder>forms</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages>
+        <language tag="ru-RU">ru-RU.mod_uk_slideshow.ini</language>
+        <language tag="ru-RU">ru-RU.mod_uk_slideshow.sys.ini</language>
+    </languages>
+        <config>
+            <fields name="params">
+                <fieldset name="basic">
+                    <field name="dotnav" type="radio" label="MOD_UK_SLIDESHOW_DOTNAV" default="1" class="btn-group">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
+                    <field name="slidenav" type="radio" label="MOD_UK_SLIDESHOW_SLIDENAV" default="1" class="btn-group">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
+                    <field name="animation" type="list" label="MOD_UK_SLIDESHOW_ANIMATION" default="slide">
+                        <option value="slide">MOD_UK_SLIDESHOW_ANIMATION_SLIDE</option>
+                        <option value="fade">MOD_UK_SLIDESHOW_ANIMATION_FADE</option>
+                        <option value="scale">MOD_UK_SLIDESHOW_ANIMATION_SCALE</option>
+                        <option value="pull">MOD_UK_SLIDESHOW_ANIMATION_PULL</option>
+                        <option value="push">MOD_UK_SLIDESHOW_ANIMATION_PUSH</option>
+                    </field>
+                    <field name="velocity" type="text" label="MOD_UK_SLIDESHOW_VELOCITY" default="1" class="input-small" />
+                    <field name="autoplay" type="radio" label="MOD_UK_SLIDESHOW_AUTOPLAY" default="0" class="btn-group">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
+                    <field name="autoplay_interval" type="text" label="MOD_UK_SLIDESHOW_AUTOPLAY_INTERVAL" default="7000" class="input-small" />
+                    <field name="finite" type="radio" label="MOD_UK_SLIDESHOW_FINITE" default="0" class="btn-group">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
+                    <field name="pause_on_hover" type="radio" label="MOD_UK_SLIDESHOW_PAUSE_ON_HOVER" default="0" class="btn-group">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
+                    <field name="index" type="text" label="MOD_UK_SLIDESHOW_INDEX" default="0" class="input-small" />
+                    <field name="ratio" type="text" label="MOD_UK_SLIDESHOW_RATIO" default="16:9" class="input-small" />
+                    <field name="min_height" type="text" label="MOD_UK_SLIDESHOW_MIN_HEIGHT" default="0" class="input-small" />
+                    <field name="max_height" type="text" label="MOD_UK_SLIDESHOW_MAX_HEIGHT" default="0" class="input-small" />
+                </fieldset>
+                <fieldset name="slides">
+                    <field name="items" type="subform" label="COM_MODULES_SLIDES_FIELDSET_LABEL" formsource="/modules/mod_uk_slideshow/forms/form.xml" multiple="true" min="0" groupByFieldset="false" layout="joomla.form.field.subform.repeatable" />
+                </fieldset>
+                <fieldset name="advanced">
+                    <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                    <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                    <field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1">
+                        <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                        <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    </field>
+                </fieldset>
+            </fields>
+        </config>
+</extension>

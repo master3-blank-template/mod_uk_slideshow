@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field name="title" type="text" label="MOD_UK_SLIDESHOW_FORM_TITLE" class="input-xxlarge" />
+    <field name="img_front" type="media" label="MOD_UK_SLIDESHOW_FORM_ING_FRONT" class="input-xxlarge" />
+    <field name="content" type="textarea" label="MOD_UK_SLIDESHOW_FORM_CONTENT" rows="3" filter="raw" class="span12" />
+    <field name="link" type="text" label="MOD_UK_SLIDESHOW_FORM_LINK" default="" class="input-xxlarge" />
+    <field name="link_text" type="text" label="MOD_UK_SLIDESHOW_FORM_LINK_TEXT" default="Read more" />
+    <field name="pos" type="list" label="MOD_UK_SLIDESHOW_FORM_POS" default="0" class="input-xlarge">
+        <option value="0">MOD_UK_SLIDESHOW_FORM_POS_LEFT</option>
+        <option value="1">MOD_UK_SLIDESHOW_FORM_POS_RIGHT</option>
+    </field>
+    <field name="img_bg" type="media" label="MOD_UK_SLIDESHOW_FORM_IMG_BG" class="input-xxlarge" />
+</form>
