@@ -18,6 +18,6 @@ if ($autoplay)
 if ($finite) $sw_params[] = 'finite:true';
 if ($pause_on_hover) $sw_params[] = 'pause-on-hover:true';
 if ((int)$index > 0) $sw_params[] = 'index:' . (int)$index;
-if ($sw_params) $sw_params = '="' . implode(';', $sw_params) . '"';
+$sw_params = $sw_params ? '="' . implode(';', $sw_params) . '"' : '';
     
 require(JModuleHelper::getLayoutPath('mod_uk_slideshow', $params->get('layout', 'default')));
