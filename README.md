@@ -1,9 +1,19 @@
 # UIkit 3 Slideshow
 
-### Слайд-шоу изображений и контента, основанное на фреймворке UIkit 3. Модуль для Joomla! 3<br>Slideshow of images and content, based on the UIkit 3 framework. Module for Joomla! 3
+### EN:
 
-Внимание! Модуль не содержит скриптов и стилей фреймворка, подключите их самостоятельно в вашем шаблоне (подразумевается, что ваш шаблон уже основан на данном фреймворке).
+Slideshow, based on the UIkit 3 framework. Module for Joomla! 3
 
-PHP 7+
+**Warning!** The module does not contain scripts and framework styles, connect them yourself in your template (it is assumed that your template is already based on this framework).
 
-Язык модуля - только русский.<br>Module language - Russian only.
+### RU:
+
+Слайдшоу, основанное на фреймворке UIkit 3. Модуль для Joomla! 3
+
+**Внимание!** Модуль не содержит скриптов и стилей фреймворка, подключите их самостоятельно в вашем шаблоне (подразумевается, что ваш шаблон уже основан на данном фреймворке).
+
+<hr>
+
+PHP 5.6+
+
+Joomla 3.6+

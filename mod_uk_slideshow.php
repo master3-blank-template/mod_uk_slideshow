@@ -1,8 +1,23 @@
 <?php defined('_JEXEC') or die;
+/*
+ * @package     mod_uk_slideshow
+ * @copyright   Copyright (C) 2018 Aleksey A. Morozov (AlekVolsk). All rights reserved.
+ * @license     GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt
+ */
 
-$vars = ['moduleclass_sfx', 'dotnav', 'slidenav', 'animation', 'velocity', 'autoplay', 'autoplay_interval', 'finite', 'pause_on_hover', 'index', 'ratio', 'min_height', 'max_height', 'items'];
+$vars = [
+    'slideshow_class', 'item_class',
+    'dotnav', 'slidenav', 'animation', 'velocity', 'autoplay', 'autoplay_interval', 'finite', 'pause_on_hover', 'index', 'ratio', 'min_height', 'max_height',
+    'items'
+];
+
 foreach ($vars as $var)
+{
     $$var = $params->get($var);
+}
+
+$slideshow_class = trim($slideshow_class) ? ' ' . trim($slideshow_class) : '';
+$item_class = trim($item_class);
 
 $sw_params = [];
 if (!$min_height && !$max_height && $ratio != '') $sw_params[] = 'ratio:' . $ratio;
