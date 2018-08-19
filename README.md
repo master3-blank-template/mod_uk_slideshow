@@ -1,5 +1,7 @@
 # UIkit 3 Slideshow
 
+![Github Releases](https://img.shields.io/github/downloads/AlekVolsk/mod_uk_slideshow/latest/total.svg)
+
 ### EN:
 
 Slideshow, based on the UIkit 3 framework. Module for Joomla! 3
