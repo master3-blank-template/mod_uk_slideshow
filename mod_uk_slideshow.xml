@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<extension type="module" version="3.6" method="upgrade" client="site">
+<extension type="module" version="3.7" method="upgrade" client="site">
     <name>UIkit 3 Slideshow</name>
-	<author>Aleksey A. Morozov (AlekVolsk)</author>
-	<copyright>(C) 2018 Aleksey A. Morozov. All rights reserved.</copyright>
-	<license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
-	<version>1.1.0</version>
-	<creationDate>April 2018</creationDate>
+    <author>Aleksey A. Morozov (AlekVolsk)</author>
+    <copyright>© 2019 Aleksey A. Morozov. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
+    <version>1.2.0</version>
+    <creationDate>February 2019</creationDate>
     <description>MOD_UK_SLIDESHOW_XML_DESCRIPTION</description>
     <files>
         <filename module="mod_uk_slideshow">mod_uk_slideshow.php</filename>
@@ -20,7 +20,7 @@
     </languages>
     <config>
         <fields name="params">
-            
+
             <fieldset name="basic">
                 <field name="slider_class" type="text" label="MOD_UK_SLIDESHOW_CLASS" class="input-xlasrge" />
                 <field name="item_class" type="text" label="MOD_UK_SLIDESHOW_ITEM_CLASS" class="input-xlasrge" />
@@ -58,11 +58,11 @@
                 <field name="min_height" type="text" label="MOD_UK_SLIDESHOW_MIN_HEIGHT" default="0" class="input-small" />
                 <field name="max_height" type="text" label="MOD_UK_SLIDESHOW_MAX_HEIGHT" default="0" class="input-small" />
             </fieldset>
-            
+
             <fieldset name="slides">
                 <field name="items" type="subform" label="COM_MODULES_SLIDES_FIELDSET_LABEL" formsource="/modules/mod_uk_slideshow/forms/form.xml" multiple="true" min="0" groupByFieldset="false" layout="joomla.form.field.subform.repeatable" />
             </fieldset>
-            
+
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
                 <field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1">
